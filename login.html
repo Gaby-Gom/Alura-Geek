@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner/banner.css">
+   <!-- <link rel="stylesheet" href="./css/banner/banner-contenido.css">-->
+  <!--  <link rel="stylesheet" href="./css/productos/productos.css">-->
+    <link rel="stylesheet" href="./css/contacto/contacto.css">
+
+    <link rel="stylesheet" href="./css/components/inputs.css">
+
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/screens/login.css">
+</head>
+</head>
+
+<body class="all">
+    <header class="header">
+        <nav class="header__nav__principal">
+            <a href="../Geek/index.html" class="header__nav__link">
+                <img class="header__nav__link__logo" alt="Logo de AluraGeek" src="img/Logo.png">
+            </a>
+            <div class="header__nav__wrapper">
+                <div class="header-buscador-busca header-buscador-busca__lupa">
+                    <i class="fa fa-search"></i>
+                </div>
+                <a href="../Geek/login.html" class="header__nav__link header__nav__link--login">Login</a>
+            </div>
+            <div class="header-barraBusca__wrapper"><!--VER QUE HACE ESTOOOOOO-->
+                <form action="" class="header-barraBusca__wrapper__form">
+                    <label for="buscar"></label>
+                    <input type="search" id="buscar" name="query" class="" placeholder="¿Qué deseas buscar?">
+                    <button class="" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+            <section class="login">
+                <form action="" class="login__formulario flex flex--column">
+                     <fieldset>
+                         <legend class="form_label">Iniciar Sesion</legend>
+                         <div class="input-container">
+                             <input type="email" id="email" class="input" type="email" placeholder="Escriba su correo electronico" required data-tipo="email">
+                             <label class="input-label" for="email">Escriba su correo electronico</label>
+                             <span class="input-message-error">Este campo no es valido</span>
+                         </div>
+
+                         <div class="input-container">
+                             <input type="password" name="password" id="password" class="input" placeholder="Escriba su password" required data-tipo="password">
+                             <label class="input-label input-label--message" for="password">Escriba  su password </label>                        
+                            <span class="input-message-error"></span>
+                         </div>
+                     </fieldset>
+                     <!-- <a href="./agregar-producto.html">
+                    <button class="button button-entrar">Entrar</button>
+                </a> -->
+
+                <a href="../Alura Geek/productos.html" class="button button-entrar">Entrar</a>
+
+
+
+                </form>
+            </section>
+
+
+    
+
+      <section class="contacto">
+            <div class="listaNavegacion">
+                <img class="listaNavegacion__logo" src="img/Logo.png" alt="Logo de AluraGeek">
+                <nav class="listaNavegacion__navegacion">
+                    <ul>
+                        <li class="listaNavegacion__enlace"><a href="#">Quienes somos</a></li>
+                        <li class="listaNavegacion__enlace"><a href="#">Política de privacidad</a></li>
+                        <li class="listaNavegacion__enlace"><a href="#">Programa de fidelidad</a></li>
+                        <li class="listaNavegacion__enlace"><a href="#">Nuestras tiendas</a></li>
+                        <li class="listaNavegacion__enlace"><a href="#">Quiero ser franquiciado</a></li>
+                        <li class="listaNavegacion__enlace"><a href="#">Anúncie aquí</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <form action="" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="form__label">Hable con nosotros</legend>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required maxlength="40"
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensaje" id="mensaje" class="input" placeholder="Escribe tu mensaje" required minlength="10" maxlength="120"
+                            data-tipo="mensaje" cols="30" rows="3"></textarea>
+                        <label class="input-label input-label--message" for="mensaje">Mensaje</label>
+                        <span class="input-message-error input-message-error--mensaje">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <button class="button">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        Desarrollado por Gabriela
+    </footer>
+
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./js/script.js" ></script>
+    
+</body>
+
+</html>
